@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini InnerTune</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Mini InnerTune</h1>
+    
+    <label for="binaural">Son binaural :</label>
+    <select id="binauralSelect">
+      <option value="binaural1.mp3">Binaural 1</option>
+      <option value="binaural2.mp3">Binaural 2</option>
+    </select>
+
+    <label for="voice">Voix IA :</label>
+    <select id="voiceSelect">
+      <option value="voix1.mp3">Voix 1</option>
+      <option value="voix2.mp3">Voix 2</option>
+    </select>
+
+    <button onclick="playSounds()">Écouter</button>
+
+    <div class="player">
+      <audio id="binauralAudio" controls></audio>
+      <audio id="voiceAudio" controls></audio>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
